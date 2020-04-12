@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import Joke from './joke';
 
 const  App = () =>{
 
@@ -26,6 +26,8 @@ const  App = () =>{
         <input value={userQuery} onChange={updateUserQuery} onKeyPress={handleKeyPress}/>
         <button onClick={searchQuery}>Search</button>
       </div>
+      <hr/>
+      <Joke/>
     </div>
   );
 }
